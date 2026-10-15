@@ -1,0 +1,21 @@
+name: AI bridge task
+description: Prepare an approved Gemini analysis and Antigravity coding handoff
+title: "[AI task] "
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal and acceptance checks
+      description: Public-safe instructions only. No keys, private code, credentials, or sensitive Drive contents.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Reviewed source references
+      description: List exact file revisions and private Drive references without confidential titles. Permissions stay private.
+  - type: textarea
+    id: scope
+    attributes:
+      label: Allowed files and commands
+      description: Define scope, test commands, and excluded operations. Merge, deployment and spending always require separate human approval.
